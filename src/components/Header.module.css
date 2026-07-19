@@ -1,0 +1,46 @@
+* {
+    margin: auto;
+    padding: auto;
+    background-color: darkcyan;
+}
+
+.quebra {
+    display: flex;
+}
+
+.titulo {
+    color: black;
+    margin: auto;
+    text-align: start;
+    margin: auto;
+    padding: 2rem;
+}
+
+.titulo:hover {
+    color: darkcyan;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    gap: 8rem;
+    padding-right: 2rem;
+    list-style-type: none;
+}
+
+.quebra, .titulo, ul, a{
+    background-color: rgb(92, 63, 31)
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    border-radius: 5px;
+    padding: 15px;  
+    border: 1px solid rgba(255, 255, 255, 0.486);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
+}
