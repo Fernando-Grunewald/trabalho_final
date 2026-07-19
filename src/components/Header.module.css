@@ -1,46 +1,60 @@
-* {
-    margin: auto;
-    padding: auto;
-    background-color: darkcyan;
+@import url('https://googleapis.com');
+@import url('https://fonts.gstatic.com');
+
+.headerContainer {
+    background-image: linear-gradient(90deg, #3dffbb 0%, #ffabdc 80%);
+    width: 100%;
+    font-family: 'Courier New';
 }
 
 .quebra {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
 }
 
 .titulo {
-    color: black;
-    margin: auto;
-    text-align: start;
-    margin: auto;
-    padding: 2rem;
+    color: white;
+    font-size: 38px; 
+    margin: 0;
+    font-family: "Henny Penny";
+    margin-right: 12rem;
 }
 
 .titulo:hover {
-    color: darkcyan;
+    color: #ffabdc;
     cursor: pointer;
+    transition: all 0.5s;
 }
 
-ul {
+.lista {
     display: flex;
-    gap: 8rem;
-    padding-right: 2rem;
+    gap: 1.5rem;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.quebra, .titulo, ul, a{
-    background-color: rgb(92, 63, 31)
-}
-
-a {
-    font-size: 20px;
+.link {
+    font-size: 16px;
     text-decoration: none;
-    color: black;
+    color: white; 
+    padding: 8px 12px;
+    transition: all 0.2s ease;
+    font-weight: 400;
 }
 
-a:hover {
+.link:hover {
     border-radius: 5px;
-    padding: 15px;  
-    border: 1px solid rgba(255, 255, 255, 0.486);
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
 }
