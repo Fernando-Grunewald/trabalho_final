@@ -1,16 +1,40 @@
 .conteudo_main {
     background-color: #1a2333;
-    padding-bottom: 300px;
-    padding-top: 80px;
     font-family: 'Courier New';
-    padding: 2rem;
     border-top: 3px solid #ffabdc;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .div_sections {
     margin: auto;
     padding: 10px;
-    background-color: rgba(255, 0, 0, 0.267);
+}
+
+.preferencias {
+
+    padding: 20px;
+    width: 400px;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+    overflow-y: auto;
+    transition: all 0.6s;
+    box-shadow: 30px 0 35px #000000;;
+    margin: 0;
+    
+}
+
+.preferencias:hover
+    {
+        box-shadow: 0 0 35px #98ffdb;
+    }
+
+.aberto {
+    opacity: 1;
+}
+
+.fechado {
+    opacity: 0;
 }
 
 .jogos {
@@ -23,9 +47,10 @@
 
 .opcoes {
     background-color: rgba(0, 255, 255, 0.171);
-    padding-bottom: 900px
+    padding: 10px
     
 }
+
 
 .div_sections {
     display: flex;
@@ -40,4 +65,49 @@
 
 .secoes {
     align-content: center;
+}
+
+.opcoes dt {
+    color: #ffabdc;
+    font-size: large;
+    font-family: 'Courier New';
+    font-style: italic;
+    padding: 20px;
+
+}
+
+.opcoes dd {
+    color: rgba(255, 255, 255, 0.397);
+    font-style: italic;
+    padding: 5px;
+}
+
+
+
+
+input[type="checkbox"] {
+   appearance: none;
+   width: 20px;
+   height: 20px;
+   border: 2px solid rgba(255, 255, 255, 0.397);
+   border-radius: 3px;
+   cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+    border: none;
+    background-color: #ffabdc;
+}
+
+input[type="checkbox"]:checked + span{
+    transition: all 0.2s;
+    color: #ffabdc;
+    font-weight: bold;
+}
+
+.conteudo_main button{
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+
 }

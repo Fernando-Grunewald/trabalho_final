@@ -1,7 +1,12 @@
 import Cards from "./Cards";
+import React, { useState } from 'react';
 import shop_css from "./Shop.module.css";
 
 export default function Shop() {
+
+    const [isOpen, setIsOpen] = useState(true);
+    const toggleSidenav = () => {setIsOpen(!isOpen)}; // is open fica false pela !
+
     return (
 
         <main className={shop_css.conteudo_main}>
@@ -9,168 +14,173 @@ export default function Shop() {
             <div className={shop_css.div_sections}>
 
             <section className={shop_css.secoes}>
-                <h2 className={shop_css.secao_titulo}>Preferências</h2>
-                <div className={shop_css.opcoes}>
-                    <dl>
-                        <dt>Filtrar</dt>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Um jogador </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Multiplayer </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Cooperativo </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Cooperativo Local</span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Servidores Online</span>
-                        </dd>
 
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Compatível com Controle </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Axolotl Deck </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Conteúdo Adulto </span>
-                        </dd>
-                            <dd>
-                            <input type="checkbox"></input>
-                            <span> VR </span>
-                        </dd>
+                <button onClick={toggleSidenav}> {isOpen ? ' Minimizar ' : ' Máximizar '} </button>
 
-                    </dl>
+                <aside className={`${shop_css.preferencias} ${isOpen ? shop_css.aberto : shop_css.fechado }`}>
 
-                    <dl>
-                        <dt>Gêneros</dt>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Hero-Shooter</span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> FPS de Tiro </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Hack & Slash</span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Arcade</span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Casual </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Sobrevivência </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Romance </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Corrida </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Sandbox </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Simulação </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Combate em Turnos </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Comédia </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Mundo Aberto </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Souls-Like </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> RPG </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Puzzles e Enigmas</span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> História</span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Esportes </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Mistério </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Vida e Imersão </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Espaço </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Cartas </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Fazenda </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Visual Novels </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Construção </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Plataforma </span>
-                        </dd>
+                    <h2 className={shop_css.secao_titulo}>Preferências</h2>
+                    <nav className={shop_css.opcoes}>
+                            <dl>
+                                <dt>Acessibilidade</dt>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Um jogador </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Multiplayer </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Cooperativo </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Cooperativo Local</span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Servidores Online</span>
+                                </dd>
 
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Tower Defense </span>
-                        </dd>
-                        <dd>
-                            <input type="checkbox"></input>
-                            <span> Luta e Artes marciais </span>
-                        </dd>
-                    </dl>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Compatível com Controle </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Axolotl Deck </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Conteúdo Adulto </span>
+                                </dd>
+                                    <dd>
+                                    <input type="checkbox"></input>
+                                    <span> VR </span>
+                                </dd>
+                            </dl>
 
-                </div>
+                            <dl>
+                                <dt>Gêneros</dt>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Hero-Shooter</span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> FPS de Tiro </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Hack & Slash</span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Arcade</span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Casual </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Sobrevivência </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Romance </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Corrida </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Sandbox </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Simulação </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Combate em Turnos </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Comédia </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Mundo Aberto </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Souls-Like </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> RPG </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Puzzles e Enigmas</span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> História</span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Esportes </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Mistério </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Vida e Imersão </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Espaço </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Cartas </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Fazenda </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Visual Novels </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Construção </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Plataforma </span>
+                                </dd>
+
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Tower Defense </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Luta e Artes marciais </span>
+                                </dd>
+                            </dl>
+
+                        </nav>
+                    </aside>
 
             </section>
 
