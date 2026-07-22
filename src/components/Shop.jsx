@@ -15,7 +15,7 @@ export default function Shop() {
 
             <section className={shop_css.secoes}>
 
-                <button onClick={toggleSidenav}> {isOpen ? ' Minimizar ' : ' Máximizar '} </button>
+                <button className={shop_css.butaun} onClick={toggleSidenav}> {isOpen ? ' Minimizar ' : ' Máximizar '} </button>
 
                 <aside className={`${shop_css.preferencias} ${isOpen ? shop_css.aberto : shop_css.fechado }`}>
 
@@ -184,7 +184,7 @@ export default function Shop() {
 
             </section>
 
-            <section>
+            <section className={shop_css.secao_jogos}>
                 <h2 className={shop_css.secao_titulo}>Recomendados</h2>
                 <div className={shop_css.jogos}>
 
@@ -254,6 +254,27 @@ export default function Shop() {
                         emPromocao={false}
                     />
                     
+                    <Cards
+                        titulo="Placeholder"
+                        imagem=""
+                        precoOriginal={10.99}
+                        categoria="Pixel | Sobrevivência | Sandbox"
+                        emPromocao={false}
+                    />
+                    <Cards
+                        titulo="Placeholder"
+                        imagem=""
+                        precoOriginal={10.99}
+                        categoria="Pixel | Sobrevivência | Sandbox"
+                        emPromocao={false}
+                    />
+                    <Cards
+                        titulo="Placeholder"
+                        imagem=""
+                        precoOriginal={10.99}
+                        categoria="Pixel | Sobrevivência | Sandbox"
+                        emPromocao={false}
+                    />
                     <Cards
                         titulo="Placeholder"
                         imagem=""
