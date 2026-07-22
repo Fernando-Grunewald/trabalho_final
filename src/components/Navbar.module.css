@@ -5,6 +5,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 1px 10px #ffabdc;
 }
 
 .navbar {
@@ -13,19 +14,19 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 3px solid #ffabdc;
+    border-bottom: 1px solid #ffabdc;
     box-shadow: inset 0 10px 5px -10px #ffffff;
 }
 
 .lista_links {
     display: flex;
-    gap: 5rem;
+    gap: 3rem;
     margin: 0 auto;
     justify-content: center; 
     list-style: none; 
 }
 
-.lista_links a, .pesquisar {
+.lista_links a, .pesquisar, .carteira {
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
@@ -38,7 +39,8 @@
   font-family: 'Courier New';
   padding: 10px;
   text-shadow: 0 0 4px rgba(171, 255, 209, 0.5);
-  margin: 5px;
+  margin: 6px;
+  letter-spacing: 3px;
 }
 
 .lista_links a:hover {
@@ -46,4 +48,64 @@
   border: 2px solid none;
   border-radius: 5px;
   box-shadow: 0 2px 4px white;
+}
+
+.lista_links li:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.pesquisar {
+  font-size: 18px;
+}
+
+.carteira {
+  border: 1px solid #ffffff44;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.barra_pesquisa {
+  background-color: #abcdff23;
+  border: none;
+  outline: none;
+  width: 40%;
+  color: white;
+  text-shadow: 0 0 4px rgba(171, 255, 209, 0.5);
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.buscar {
+  background-color: #abcdff23;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Courier New';
+  border: none;
+  letter-spacing: 4px;
+}
+
+.buscar:hover {
+  transition: all 0.5s ease;
+  background-image: linear-gradient(#3dffbb, #ffabdc);
+  transform: translateY(-2px); /* ele vai um pouquinho mais pra cima */
+  color: white;
+  box-shadow: 0 2px 4px white;
+  cursor: pointer;
+
+}
+
+.buscar:hover:before {
+  opacity: 1;
+  transition: opacity 0.5s;
+  box-shadow: 0 2px 4px white;
+}
+
+.buscar:active {
+  background-image: linear-gradient(#2cad80, #b3799b);
 }

@@ -21,7 +21,7 @@ export default function Card({ titulo, imagem, precoOriginal, precoDesconto, cat
               <span className={card_css.precoAtual}>R$ {precoDesconto.toFixed(2)}</span>
             </>
           ) : (
-            <span className={card_css.precoAtual}>R$ {precoOriginal.toFixed(2)}</span>
+            <span className={card_css.precoAtual}>R$ {precoOriginal}</span>
           )}
         </div>
 

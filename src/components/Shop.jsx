@@ -225,6 +225,15 @@ export default function Shop() {
                 <h2 className={shop_css.secao_titulo}>Recomendados</h2>
                 <div className={shop_css.jogos}>
 
+
+                    <Cards
+                        titulo="Marvel Rivals"
+                        imagem="/Rivals.png"
+                        precoOriginal="Gratuito"
+                        categoria="Hero-Shooter | Marvel | Competitivo"
+                        emPromocao={false}
+                    />
+
                     <Cards 
                         titulo="Hades"
                         imagem="/Hades.png" 
@@ -232,6 +241,33 @@ export default function Shop() {
                         precoDesconto={17.99} 
                         categoria="Hack&Slash | RPG | Mitologia" 
                         emPromocao={true} 
+                    />
+
+                    <Cards
+                        titulo="Little Nightmeres"
+                        imagem="/little.png"
+                        precoOriginal={39.99}
+                        precoDesconto={12.29}
+                        categoria="Mistério | Dark | Puzzle"
+                        emPromocao={true}
+                    />
+
+                    <Cards
+                        titulo="Palworld"
+                        imagem="/Pals.png"
+                        precoOriginal={85.99}
+                        precoDesconto={59.99}
+                        categoria="Mundo Aberto | RPG | Multiplayer"
+                        emPromocao={true}
+                    />
+
+                    <Cards
+                        titulo="Peak"
+                        imagem="/Peak.png"
+                        precoOriginal={21.95}
+                        precoDesconto={7.99}
+                        categoria="Sobrevivência | Comédia | Co-op"
+                        emPromocao={true}
                     />
 
                     <Cards 
@@ -251,18 +287,18 @@ export default function Shop() {
                     />
 
                     <Cards
-                        titulo="Palworld"
-                        imagem="/Pals.png"
-                        precoOriginal={85.99}
-                        precoDesconto={59.99}
-                        categoria="Mundo Aberto | RPG | Multiplayer"
+                        titulo="Goat Simulator 3"
+                        imagem="/cabra.png"
+                        precoOriginal={10.99}
+                        precoDesconto={31.99}
+                        categoria="Simulação | Mundo Aberto | Comédia"
                         emPromocao={true}
                     />
 
                     <Cards
                         titulo="Elden Ring"
                         imagem="/Elden.png"
-                        precoOriginal={274.50}
+                        precoOriginal={274.59}
                         categoria="Souls-Like | Difícil | Dark"
                         emPromocao={false}
                     />
@@ -276,49 +312,23 @@ export default function Shop() {
                     />
 
                     <Cards
-                        titulo="Placeholder"
-                        imagem=""
+                        titulo="Sons of The Forest"
+                        imagem="/Floresta.png"
                         precoOriginal={10.99}
-                        categoria="Pixel | Sobrevivência | Sandbox"
+                        categoria="Co-op | Sobrevivência | Terror"
                         emPromocao={false}
                     />
+        
 
                     <Cards
-                        titulo="Placeholder"
-                        imagem=""
-                        precoOriginal={10.99}
-                        categoria="Pixel | Sobrevivência | Sandbox"
-                        emPromocao={false}
-                    />
-                    
-                    <Cards
-                        titulo="Placeholder"
-                        imagem=""
-                        precoOriginal={10.99}
-                        categoria="Pixel | Sobrevivência | Sandbox"
-                        emPromocao={false}
-                    />
-                    <Cards
                         titulo="Baldur's Gate 3"
-                        imagem=""
+                        imagem="/baldur.png"
                         precoOriginal={159.99}
                         categoria="RPG | Mundo Aberto | Turn-Based"
                         emPromocao={false}
                     />
-                    <Cards
-                        titulo="Placeholder"
-                        imagem=""
-                        precoOriginal={10.99}
-                        categoria="Pixel | Sobrevivência | Sandbox"
-                        emPromocao={false}
-                    />
-                    <Cards
-                        titulo="Placeholder"
-                        imagem=""
-                        precoOriginal={10.99}
-                        categoria="Pixel | Sobrevivência | Sandbox"
-                        emPromocao={false}
-                    />
+
+
 
 
                 </div>
