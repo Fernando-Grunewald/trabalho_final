@@ -5,6 +5,7 @@
     background-image: linear-gradient(90deg, #3dffbb 0%, #ffabdc 80%);
     width: 100%;
     font-family: 'Courier New';
+    box-sizing: border-box;
 }
 
 .quebra {
@@ -13,20 +14,20 @@
     align-items: center;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 .logo {
-    height: 130px;
-    width: 130px;
+    height: auto;
+    width: clamp(60px, 8vw, 110px);
 }
 
 .titulo {
     color: white;
-    font-size: 38px; 
+    font-size: clamp(22px, 3.5vw, 38px); 
     margin: 0;
     font-family: "Henny Penny";
-    margin-right: 12rem;
+    text-align: center;
 }
 
 .titulo:hover {
@@ -37,19 +38,22 @@
 
 .lista {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .link {
-    font-size: 16px;
+    font-size: clamp(14px, 1.2vw, 16px);
     text-decoration: none;
     color: white; 
     padding: 8px 12px;
     transition: all 0.2s ease;
     font-weight: 400;
+    display: inline-block;
 }
 
 .link:hover {
@@ -57,4 +61,19 @@
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 850px) {
+    .quebra {
+        flex-direction: column;
+    }
+
+    .lista {
+        gap: 0.5rem;
+    }
+
+    .link {
+        padding: 6px 8px;
+    }
+
 }
