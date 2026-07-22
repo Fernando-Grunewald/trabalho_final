@@ -21,6 +21,39 @@ export default function Shop() {
 
                     <h2 className={shop_css.secao_titulo}>Preferências</h2>
                     <nav className={shop_css.opcoes}>
+
+                            <dl>
+                                <dt>Novidades</dt>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span>Notícias e Updates</span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span>Em promoção</span>
+                                </dd>
+
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span>Gratuitos</span>
+                                </dd>
+
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span>Dlcs</span>
+                                </dd>
+
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span>Loja de Pontos</span>
+                                </dd>
+
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span>Família</span>
+                                </dd>
+                            </dl>
+
                             <dl>
                                 <dt>Acessibilidade</dt>
                                 <dd>
@@ -55,6 +88,10 @@ export default function Shop() {
                                 <dd>
                                     <input type="checkbox"></input>
                                     <span> Conteúdo Adulto </span>
+                                </dd>
+                                <dd>
+                                    <input type="checkbox"></input>
+                                    <span> Crossplay </span>
                                 </dd>
                                     <dd>
                                     <input type="checkbox"></input>
@@ -106,7 +143,7 @@ export default function Shop() {
                                 </dd>
                                 <dd>
                                     <input type="checkbox"></input>
-                                    <span> Combate em Turnos </span>
+                                    <span> Turn-Based </span>
                                 </dd>
                                 <dd>
                                     <input type="checkbox"></input>
@@ -262,10 +299,10 @@ export default function Shop() {
                         emPromocao={false}
                     />
                     <Cards
-                        titulo="Placeholder"
+                        titulo="Baldur's Gate 3"
                         imagem=""
-                        precoOriginal={10.99}
-                        categoria="Pixel | Sobrevivência | Sandbox"
+                        precoOriginal={159.99}
+                        categoria="RPG | Mundo Aberto | Turn-Based"
                         emPromocao={false}
                     />
                     <Cards
